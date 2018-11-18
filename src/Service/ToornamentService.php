@@ -52,6 +52,7 @@ class ToornamentService
     /**
      * ToornamentService constructor.
      * @param \GuzzleHttp\Client $guzzle_client
+     * @param FilesystemCache $cache
      * @param String $apikey
      * @param String $clientId
      * @param String $clientSecret
@@ -75,7 +76,7 @@ class ToornamentService
         $this->clientSecret = $clientSecret;
         $this->tournamentId = $tournamentId;
         $this->tournamentStageId = $tournamentStageId;
-//        $cache->clear();
+        $cache->clear();
     }
 
     /**
@@ -87,7 +88,6 @@ class ToornamentService
         $cacheKey = 'toornament.oauth.accessToken';
 
         if (!$this->cache->has($cacheKey)) {
-            dump('no cach apikey');
 
             $res = $this->guzzleClient->post(
                 self::TOORNAMENT_BASE_URL . '/oauth/v2/token',
@@ -199,7 +199,6 @@ class ToornamentService
         $cacheKey = 'toornament.match.' . $matchId .'.gameslist' ;
 
         if (!$this->cache->has($cacheKey)) {
-            dump('no cach gamelist');
             $match = $this->getMatch($matchId);
             //Ugly hack because $match->getSettings['match_format'] is always null
             $numberOfGame = 3;
@@ -258,7 +257,6 @@ class ToornamentService
         $cacheKey = 'toornament.matches';
 
         if (!$this->cache->has($cacheKey)) {
-            dump('no cache match');
             $matches = $this->toornamentApiGet(
                 '/organizer/v2/tournaments/' . $this->tournamentId . '/matches',
                     'matches=0-99',
@@ -324,8 +322,6 @@ class ToornamentService
         } else {
             $matchesList = $this->cache->get($cacheKey);
         }
-
-//        dump($matchesList);
 
         return $matchesList;
     }

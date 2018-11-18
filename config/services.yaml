@@ -6,6 +6,7 @@
 parameters:
     locale: 'en'
 
+
 services:
     # default configuration for services in *this* file
     _defaults:
@@ -30,23 +31,19 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    app.guzzle_service:
+    GuzzleHttp\Client:
         class: GuzzleHttp\Client
         public: false
 
-    app.cache_service:
+    Symfony\Component\Cache\Simple\FilesystemCache:
         class: Symfony\Component\Cache\Simple\FilesystemCache
         public: false
 
-    app.toornament_service:
+    App\Service\ToornamentService:
         class: App\Service\ToornamentService
         arguments:
-          - '@app.guzzle_service'
-          - '@app.cache_service'
-          - '%env(TOORNAMENT_APIKEY)%'
-          - '%env(TOORNAMENT_CLIENT_ID)%'
-          - '%env(TOORNAMENT_CLIENT_SECRET)%'
-          - '%env(TOORNAMENT_TOURRNAMENT_ID)%'
-          - '%env(TOORNAMENT_TOURRNAMENT_STAGE_ID)%'
-
-    App\Service\ToornamentService: '@app.toornament_service'
+            $apikey: '%env(TOORNAMENT_APIKEY)%'
+            $clientId:  '%env(TOORNAMENT_CLIENT_ID)%'
+            $clientSecret:  '%env(TOORNAMENT_CLIENT_SECRET)%'
+            $tournamentId:  '%env(TOORNAMENT_TOURRNAMENT_ID)%'
+            $tournamentStageId:  '%env(TOORNAMENT_TOURRNAMENT_STAGE_ID)%'
