@@ -1,0 +1,38 @@
+<div class="loser-brackets">
+    <div class="h1 text-center">Bracket loser</div>
+    <div class="tournament-bracket tournament-bracket--rounded">
+        <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
+            <h3 class="tournament-bracket__round-title">{{ loserBracket.first.get.roundName }}</h3>
+            <ul class="tournament-bracket__list">
+                {% set lastRoundId = null %}
+                {% set cpt = -2 %}
+                {% for match in loserBracket %}
+                {% if (lastRoundId != match.roundId)  %}
+                    {% if (lastRoundId != null)  %}
+                            </ul>
+                        </div>
+                        <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
+                            <h3 class="tournament-bracket__round-title">{{ match.roundName }}</h3>
+                            <ul class="tournament-bracket__list">
+                    {% endif  %}
+                    {% set lastRoundId = match.roundId %}
+                    {% set cpt = cpt + 1 %}
+                {% endif  %}
+
+
+                {% if (cpt == -1)  %}
+                    {% set isloser = true %}
+                    {% set toloser = true %}
+                {% elseif (cpt % 2 == 0)  %}
+                    {% set isloser = true %}
+                    {% set toloser = false %}
+                {% else  %}
+                    {% set isloser = false %}
+                    {% set toloser = true %}
+                {% endif  %}
+                {% include 'brackets/match.html.twig' %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Règlement !{% endblock %}
+
+{% block body %}
+    <div class="container-fluid with-content-gutters">
+        <br><br><br>
+        <div class="page-heading bordered">
+            <div class="h3 mr-md-3 mb-0">Règles générales</div>
+        </div>
+        <ul>
+            <li>Les matchs se disputent en <b>1 contre 1.</b></li>
+            <li>Les <b>objets ne sont pas autorisés</b>.</li>
+            <li>Le knockback doit être fixé à 1.0.</li>
+            <li>Les matchs se disputent en <b>3 vies et 5 minutes</b>. En cas de Time Out, le joueur ayant le plus
+                de vie l’emporte et en cas d’égalité, celui qui a le moins de pourcentage l’emporte. En cas
+                d’égalité parfaite, le match est joué en 1 vie et 3 minutes, sur le même terrain, même
+                personnage. </li>
+            <li>Les matches se disputent en Bo3 ("Best of 3" soit 2 victoires sur 3 games) et les finales en Bo5.</li>
+            <li>Les personnages personnalisés ne sont pas autorisés.</li>
+            <li>L'organisation fourni la console et soit un controller GameCube <i class="fas fa-gamepad"></i> soit un controller switch
+                <div class="icon">
+                    <svg id="howtoplay_s" viewBox="0 0 78 78" width="100%" height="100%"><path d="M33.229 7.346H23.114a12.985 12.985 0 0 0-5.35 1.113 13.8 13.8 0 0 0-4.377 3.065 14.467 14.467 0 0 0-4.02 10.106v38.944a14.188 14.188 0 0 0 1.07 5.525 14.521 14.521 0 0 0 2.95 4.514 13.8 13.8 0 0 0 4.377 3.065 12.984 12.984 0 0 0 5.35 1.112h10.115a1.121 1.121 0 0 0 .843-.337 1.212 1.212 0 0 0 .324-.876V8.559a1.212 1.212 0 0 0-.324-.875 1.118 1.118 0 0 0-.843-.338zM17.8 19.811a5.641 5.641 0 0 1 8.17 0 6.186 6.186 0 0 1 0 8.489 5.638 5.638 0 0 1-8.17 0 6.186 6.186 0 0 1 0-8.489zm6.613 20.55a2.681 2.681 0 0 1-.736 1.92 2.536 2.536 0 0 1-3.65 0 2.874 2.874 0 0 1 0-3.841 2.539 2.539 0 0 1 3.65 0 2.687 2.687 0 0 1 .733 1.921zm-7.521 7.883a2.459 2.459 0 0 1-1.848-.774 2.845 2.845 0 0 1 0-3.841 2.591 2.591 0 0 1 3.7 0 2.845 2.845 0 0 1 0 3.841 2.466 2.466 0 0 1-1.855.774zm6.785 4.345a2.534 2.534 0 0 1-3.65 0 2.871 2.871 0 0 1 0-3.839 2.534 2.534 0 0 1 3.65 0 2.871 2.871 0 0 1 0 3.839zm4.919-5.119a2.593 2.593 0 0 1-3.7 0 2.845 2.845 0 0 1 0-3.841 2.591 2.591 0 0 1 3.7 0 2.848 2.848 0 0 1 0 3.841zm38.97-31.4a14.422 14.422 0 0 0-2.951-4.547 13.821 13.821 0 0 0-4.376-3.065 12.992 12.992 0 0 0-5.35-1.113H44.771a1.115 1.115 0 0 0-.843.338 1.207 1.207 0 0 0-.324.875v65.019a1.208 1.208 0 0 0 .324.876 1.118 1.118 0 0 0 .843.337h10.115a12.991 12.991 0 0 0 5.35-1.112 13.821 13.821 0 0 0 4.376-3.065 14.524 14.524 0 0 0 2.951-4.513 14.188 14.188 0 0 0 1.07-5.525V21.63a14.448 14.448 0 0 0-1.07-5.559zM54.261 18.7a2.535 2.535 0 0 1 3.649 0 2.869 2.869 0 0 1 0 3.84 2.535 2.535 0 0 1-3.649 0 2.872 2.872 0 0 1 0-3.84zm4.386 12.228a2.679 2.679 0 0 1-.737 1.921 2.535 2.535 0 0 1-3.649 0 2.678 2.678 0 0 1-.736-1.921 2.8 2.8 0 0 1 .736-1.954 2.464 2.464 0 0 1 3.649 0 2.8 2.8 0 0 1 .737 1.954zM48.6 25.74a2.663 2.663 0 0 1 .745-1.92 2.591 2.591 0 0 1 3.7 0 2.845 2.845 0 0 1 0 3.841 2.593 2.593 0 0 1-3.7 0 2.66 2.66 0 0 1-.745-1.921zm11.6 25.704a5.716 5.716 0 0 1-8.17 0 5.779 5.779 0 0 1-1.686-4.21 5.9 5.9 0 0 1 1.686-4.246 5.641 5.641 0 0 1 8.17 0 5.9 5.9 0 0 1 1.686 4.246 5.779 5.779 0 0 1-1.686 4.21zm2.691-23.783a2.593 2.593 0 0 1-3.7 0 2.845 2.845 0 0 1 0-3.841 2.591 2.591 0 0 1 3.7 0 2.845 2.845 0 0 1 0 3.841z"></path></svg>
+                </div>
+            </li>
+            <li>Aucune mort subite n’est jouée. Si une mort subite est demandée par le jeu après un
+                suicide move, un match en 1 vie 3 minutes sur le même terrain et avec les mêmes
+                personnages est joué.</li>
+            <li>La <b>pause doit être désactivée</b>. Dans le cas où elle ne l’est pas, celui qui met le jeu en pause
+                de manière intentionnelle ou non, perd une vie. Si les deux joueurs sont d’accord pour
+                poursuivre la partie sans pénalité, cette règle peut alors être abandonnée.
+            </li>
+            <li>Daltonisme : les joueurs daltoniens peuvent demander à leur adversaire de changer la
+                couleur de costume de leur personnage.</li>
+            <li>Il y a un arbre des perdants (Loser Bracket/LB) : il faut donc deux défaites pour sortir du
+                tournoi.</li>
+            <li>Le joueur arrivant directement en grande finale en provenance du winner bracket aura une game d'avance lors de la finale.</li>
+            <li>Si un joueur manque à l’appel, n’a pas prévenu et empêche le bon déroulement du tournoi
+                pendant <b>10 minutes</b>, il sera considéré comme ayant <b>perdu son match</b>. </li>
+        </ul>
+        <div class="page-heading bordered">
+            <div class="h3 mr-md-3 mb-0">Déroulement d'un match</div>
+        </div>
+        <ol>
+            <li>Pour la première game les joueurs commence par un Shifumi (1 manche gagnante).<br>
+                Le gagnant devient le <span class="badge badge-pill badge-warning">joueur 1</span> dans la démarche suivante</li>
+            <li>Le <span class="badge badge-pill badge-warning">joueur 1</span> <span class="text-danger">banni un combattant</span></li>
+            <li>Le <span class="badge badge-pill badge-info">joueur 2</span> <span class="text-danger">banni un combattant</span></li>
+            <li>Le <span class="badge badge-pill badge-info">joueur 2</span> <span class="text-success">sélectionne son combattant</span></li>
+            <li>Le <span class="badge badge-pill badge-warning">joueur 1</span> <span class="text-success">sélectionne son combattant</span></li>
+            <li>Le <span class="badge badge-pill badge-info">joueur 2</span> <span class="text-danger">banni un terrain</span> <a class="text-light" href="" data-toggle="modal" data-target="#listStages">(Voir la liste des terrains authorisés)</a></li>
+            <li>Le <span class="badge badge-pill badge-warning">joueur 1</span> <span class="text-danger">banni un terrain</span></li>
+            <li>Le <span class="badge badge-pill badge-info">joueur 2</span> <span class="text-success">sélectionne le terrain</span> parmi les terrains restant</li>
+            <li>Le perdant de la game devient le <span class="badge badge-pill badge-warning">joueur 1</span>.<br/>
+                Puis recommencer à l'<b>étape 2</b> jusqu'à qu'un gagnant du match soit déclaré </li>
+        </ol>
+        <div class="alert alert-warning" role="alert">
+            Deux joueurs peuvent décider de modifier la procédure à suivre pour choisir les combattants ou les terrains.<br/>
+            Pour ce faire, ils <b>doivent s'entendre sur le changement et avoir l’aval de l'organisation</b>.
+        </div>
+    </div>
+    <!-- terrain -->
+    <div class="modal fade" id="listStages" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-body">
+                    <div class="page-heading bordered">
+                        <div class="h3 mr-md-3 mb-0">Liste des terrains</div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card bg-secondary w-50 m-3">
+                            <img class="card-img-top" src="assets/img/stage/stage_img1.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0 text-center">Champ de Bataille</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary w-50 m-3">
+                            <img class="card-img-top" src="assets/img/stage/stage_img39.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0 text-center">Traversée de Lylat</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card bg-secondary w-50 m-3">
+                            <img class="card-img-top" src="assets/img/stage/stage_img3.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0 text-center">Destination Finale</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary w-50 m-3">
+                            <img class="card-img-top" src="assets/img/stage/stage_img44.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0 text-center">Smash Ville</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card bg-secondary w-50 m-3">
+                            <img class="card-img-top" src="assets/img/stage/stage_img85_en.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0 text-center">Ville & centre-ville</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary w-50 m-3">
+                            <img class="card-img-top" src="assets/img/stage/stage_img8.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0 text-center">Dream Land</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

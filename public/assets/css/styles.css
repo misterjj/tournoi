@@ -1,0 +1,135 @@
+
+body {
+    background: #272a33;
+    color: white;
+}
+nav.navbar {
+    width: 100%;
+    background-color: rgba(39,42,51, .5);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    z-index: 1000;
+    transition: background-color 200ms linear;
+}
+nav.navbar a {
+    text-decoration: none;
+}
+nav.navbar.scrolled {
+    background-color: rgba(39,42,51, .9);
+}
+nav.navbar h5 {
+    font-size: 13px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000!important;
+    background-color: #ffc107;
+}
+
+
+.heading {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background: url('/assets/img/heading.jpg') no-repeat center center;
+    background-size: cover;
+}
+.heading::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, #272a33);
+}
+.heading .logo {
+    max-width: 90vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading .h1 {
+    font-family: 'Krub', sans-serif;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px #000;
+}
+.heading .h1.title {
+    position: absolute;
+    top: 17vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading .h1.sub-title {
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading .btn {
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-heading {
+    font-family: 'Krub', sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.page-heading.bordered {
+    border-bottom: 1px solid #3b4151;
+    padding-bottom: 24px;
+}
+
+.container-fluid.with-content-gutters {
+    padding: 0 18px;
+}
+.icon {
+    display: inline-block;
+    width:20px;
+    height: 20px;
+}
+.icon svg {
+    fill: white;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    nav.navbar h5 {
+        font-size: 20px;
+    }
+    .container-fluid.with-content-gutters {
+        padding: 0 28px;
+    }
+
+    .heading .logo {
+        height: 50vh;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .container-fluid.with-content-gutters {
+        padding: 0 58px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .container-fluid.with-content-gutters {
+        padding: 0 78px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .container-fluid.with-content-gutters {
+        padding: 0 118px;
+    }
+}

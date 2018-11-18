@@ -1,0 +1,26 @@
+{% set opponnent1 = game.opponents.get(0) %}
+{% set opponnent2 = game.opponents.get(1) %}
+{% if (game.status == "completed")  %}
+    <h5 class="text-center page-heading bordered pb-1 mb-3">GAME {{ game.number }}</h5>
+    <div class="d-flex flex-row flex align-items-center">
+    <div class="flex-grow-1 text-right">
+        <div class="h5 font-weight-bold">{{ opponnent1.score > opponnent2.score ? '<i class="fas fa-trophy text-warning"></i>' }} {{ realname(opponnent1.character) }}</div>
+        {% for i in 1..(opponnent2.score) if opponnent2.score > 0 %}
+            <div class="pick dead"><img class="" src="/assets/img/fighter/pict/{{ opponnent1.character }}.png" height="40px"></div>
+        {% endfor %}
+        {% for i in 1..(3 - opponnent2.score) if (3 - opponnent2.score) > 0  %}
+            <div class="pick"><img class="" src="/assets/img/fighter/pict/{{ opponnent1.character }}.png" height="40px"></div>
+        {% endfor %}
+    </div>
+    <div><img src="/assets/img/vs-danger.png" alt="" height="75px"></div>
+    <div class="flex-grow-1">
+        <div class="h5 font-weight-bold">{{ realname(opponnent2.character) }} {{ opponnent2.score > opponnent1.score ? '<i class="fas fa-trophy text-warning"></i>' }}</div>
+        {% for i in 1..(opponnent1.score) if opponnent1.score > 0 %}
+            <div class="pick dead"><img class="" src="/assets/img/fighter/pict/{{ opponnent2.character }}.png" height="40px"></div>
+        {% endfor %}
+        {% for i in 1..(3 - opponnent1.score) if (3 - opponnent1.score) > 0 %}
+            <div class="pick"><img class="" src="/assets/img/fighter/pict/{{ opponnent2.character }}.png" height="40px"></div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,29 @@
+<div class="winner-brackets">
+    <div class="h1 text-center">Bracket des finales</div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 col-md-12">
+            <div class="tournament-bracket tournament-bracket--rounded">
+                <div class="tournament-bracket__round tournament-bracket__round--semifinals">
+                    <h3 class="tournament-bracket__round-title">finales winner & loser</h3>
+                    <ul class="tournament-bracket__list">
+                        {% for match in [finalBracket.get(0), finalBracket.get(1)] %}
+                            {% set isloser = false %}
+                            {% set toloser = false %}
+                            {% include 'brackets/match.html.twig' %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="tournament-bracket__round tournament-bracket__round--semifinals">
+                    <h3 class="tournament-bracket__round-title">Grande finale</h3>
+                    <ul class="tournament-bracket__list">
+                        {% for match in [finalBracket.get(2)] %}
+                            {% set isloser = false %}
+                            {% set toloser = false %}
+                            {% include 'brackets/match.html.twig' %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
