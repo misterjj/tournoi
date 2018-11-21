@@ -76,7 +76,7 @@ class ToornamentService
         $this->clientSecret = $clientSecret;
         $this->tournamentId = $tournamentId;
         $this->tournamentStageId = $tournamentStageId;
-        $cache->clear();
+//        $cache->clear();
     }
 
     /**
@@ -126,52 +126,65 @@ class ToornamentService
      * @param string $endpoint
      * @param string $range
      * @param array $param
-     * @return mixed
+     * @param bool $async
+     * @return \GuzzleHttp\Promise\PromiseInterface|mixed
      * @throws ToornamentException
      */
-    private function toornamentApiGet(string $endpoint, string $range = "", array $param = [])
+    private function toornamentApiGet(string $endpoint, string $range = "", array $param = [], $async = false)
     {
         if (substr($endpoint, 0, 1) !== '/') {
             $endpoint = '/' . $endpoint;
         }
 
-        try {
-            $headers = [
-                'X-Api-Key'     => $this->apikey,
-                'Authorization' => 'Bearer ' . $this->getAccessToken(),
-            ];
-            if (!empty($range)) {
-                $headers = $headers + [
+        $headers = [
+            'X-Api-Key'     => $this->apikey,
+            'Authorization' => 'Bearer ' . $this->getAccessToken(),
+        ];
+        if (!empty($range)) {
+            $headers = $headers + [
                     'Range'     => $range,
                 ];
+        }
+        if (!$async) {
+            try {
+                $res = $this->guzzleClient->get(
+                    self::TOORNAMENT_BASE_URL . $endpoint,
+                    [
+                        'headers'       => $headers,
+                        'form_params'   => $param
+                    ]
+                );
+            } catch (RequestException $e) {
+                $message = $e->getMessage();
+                switch ($e->getCode()) {
+                    case 403:
+                        $message = 'Invalid ApiKey';
+                        break;
+                    case 401:
+                        $message = 'Invalid accessToken';
+                        break;
+                    case 400:
+                        $resError = json_decode($e->getResponse()->getBody(), true);
+                        $message = isset($resError['errors'][0]['message']) ? $resError['errors'][0]['message'] : $message;
+                        break;
+                    case 416:
+                        $message = 'Invalid range';
+                }
+                throw new ToornamentException($message, 500,  $e);
             }
-            $res = $this->guzzleClient->get(
+
+            return json_decode($res->getBody(), true);
+        } else {
+            $promise = $this->guzzleClient->getAsync(
                 self::TOORNAMENT_BASE_URL . $endpoint,
                 [
                     'headers'       => $headers,
                     'form_params'   => $param
                 ]
             );
-        } catch (RequestException $e) {
-            $message = $e->getMessage();
-            switch ($e->getCode()) {
-                case 403:
-                    $message = 'Invalid ApiKey';
-                    break;
-                case 401:
-                    $message = 'Invalid accessToken';
-                    break;
-                case 400:
-                    $resError = json_decode($e->getResponse()->getBody(), true);
-                    $message = isset($resError['errors'][0]['message']) ? $resError['errors'][0]['message'] : $message;
-                    break;
-                case 416:
-                    $message = 'Invalid range';
-            }
-            throw new ToornamentException($message, 500,  $e);
-        }
 
-        return json_decode($res->getBody(), true);
+            return $promise;
+        }
     }
 
     /**
@@ -206,11 +219,22 @@ class ToornamentService
                 $numberOfGame = 5;
             }
 
-            $gameList = new GameList();
+            $promises = [];
             for ($i = 1; $i <= $numberOfGame; $i++) {
-                $game = $this->toornamentApiGet(
-                    '/organizer/v2/tournaments/' . $this->tournamentId . '/matches/' . $matchId . '/games/' . $i
+                $promises['game' . $i] = $this->toornamentApiGet(
+                    '/organizer/v2/tournaments/' . $this->tournamentId . '/matches/' . $matchId . '/games/' . $i,
+                    "",
+                    [],
+                    true
                 );
+            }
+            $results = \GuzzleHttp\Promise\unwrap($promises);
+            ksort($results);
+
+            $gameList = new GameList();
+            foreach ($results as $result) {
+                /** @var $result \GuzzleHttp\Psr7\Response */
+                $game = json_decode($result->getBody(), true);
 
                 $gameOpponentsList = new GameOpponentsList();
                 foreach ($game['opponents'] as $aOpponent) {
