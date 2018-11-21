@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription !{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid with-content-gutters">
+    <br><br><br>
+    <div class="page-heading bordered">
+        <div class="h3 mr-md-3 mb-0">Inscription</div>
+    </div>
+    <div class="col-lg-6 offset-lg-3 col-md-12">
+        <div class="alert alert-success" role="alert">
+            <b>Félicitation</b> : Vous êtes inscrit pour le tournois. <a href="{{ path('home') }}" class="alert-link"> Revenir à la home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

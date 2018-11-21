@@ -7,14 +7,28 @@
         <img class="logo" src="/assets/img/logo.png" alt="">
         <div class="h1 text-uppercase title d-none d-md-block"><span class="text-warning">16</span> participants</div>
         <div class="h1 text-uppercase sub-title d-none d-md-block"><span class="text-warning">1</span> seul vainqueur</div>
-        <a class="btn btn-lg btn-warning font-weight-bold text-uppercase text-light" href="#">Je m'inscris</a>
+        <a class="btn btn-lg btn-warning font-weight-bold text-uppercase text-light" href="{{ path('register') }}">Je m'inscris</a>
     </div>
     <div class="container-fluid with-content-gutters">
-        <h3 class="page-heading bordered">Planning </h3>
-        <div class="row">
-            <div class="col-md-6 col-xs-12">coucou</div>
-            <div class="col-md-6 col-xs-12">coucou</div>
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        {% if nextMatches.count > 0 %}
+            {% set isloser = false %}
+            {% set toloser = false %}
+            <h3 class="page-heading bordered">Les {{ nextMatches.count }} prochains matchs</h3>
+            <div class="row no-lines">
+                {% for match in nextMatches %}
+                    <div class="col-md-4 col-xs-12">
+                        {% include 'brackets/match.html.twig' %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="mt-2 mb-2">
+                {% include 'brackets/finals-bracket.html.twig' %}
+            </div>
+        {% endif %}
+        <p class="text-center mt-3">
+            <a href="https://www.toornament.com" target="_blank"><img src="/assets/img/PoweredbyToor_White.png" alt="" width="200px"></a> <br/>
+            <a href="https://codepen.io/jimmyhayek/pen/yJkdEB" target="_blank" class="text-light">System responsive Tournament Bracket by Jakub Hájek</a>
+        </p>
     </div>
 {% endblock %}

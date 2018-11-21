@@ -71,6 +71,7 @@ nav.navbar h5 {
     top: 80vh;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1000;
 }
 
 .page-heading {

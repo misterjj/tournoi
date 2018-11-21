@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription !{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid with-content-gutters">
+    <br><br><br>
+    <div class="page-heading bordered">
+        <div class="h3 mr-md-3 mb-0">Inscription </div>
+    </div>
+    <div class="col-lg-6 offset-lg-3 col-md-12">
+        <div class="alert alert-primary" role="alert">
+            <b>Attention : </b> Seul les <b>16 premiers inscrit</b> pouront participer au tournoi.<br/>
+            Merci de verifier que vous serait disponnible <b>tous les midis du 07/01/2019 au 11/01/2019</b>
+        </div>
+        {% if (subscriptionDateStart < date('now')) %}
+            {{ form_start(form, {'action': path('register_save')}) }}
+                {{ form_widget(form) }}
+                <input type="submit" class="btn btn-block btn-lg btn-warning font-weight-bold text-uppercase text-light" value="inscription" />
+            {{ form_end(form) }}
+        {% else %}
+            <div class="alert alert-warning text-center" role="alert">
+                Ouverture des inscriptions le <b> {{ subscriptionDateStart|date('d/m/Y H:i:s') }} </b>
+            </div>
+
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

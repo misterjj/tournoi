@@ -451,3 +451,10 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+.no-lines .tournament-bracket__item::after,
+.no-lines .tournament-bracket__item .tournament-bracket__match::after,
+.no-lines .tournament-bracket__item .tournament-bracket__match::before
+{
+    display: none;
+}

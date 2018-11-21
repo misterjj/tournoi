@@ -44,10 +44,6 @@ class ToornamentService
      * @var String
      */
     private $tournamentStageId;
-    /**
-     * @var array
-     */
-    private $roundNames = [];
 
     /**
      * ToornamentService constructor.
@@ -188,19 +184,31 @@ class ToornamentService
     }
 
     /**
-     * @param string $roundId
-     * @return string
+     * @param array $roundIds
+     * @return array
      */
-    private function getRoundName(string $roundId)
+    private function getRoundNames(array $roundIds)
     {
-        if (!isset($this->roundNames[$roundId])) {
-            $round = $this->toornamentApiGet(
-                '/viewer/v2/tournaments/' . $this->tournamentId . '/rounds/' . $roundId
+        $promises = [];
+        foreach ($roundIds as $roundId)
+        {
+            $promises[$roundId] = $this->toornamentApiGet(
+                '/viewer/v2/tournaments/' . $this->tournamentId . '/rounds/' . $roundId,
+                "",
+                [],
+                true
             );
-            $this->roundNames[$roundId] = $round['name'];
+        }
+        $results = \GuzzleHttp\Promise\unwrap($promises);
+
+        $roundNames = [];
+        foreach ($results as $result) {
+            /** @var $result \GuzzleHttp\Psr7\Response */
+            $round = json_decode($result->getBody(), true);
+            $roundNames[$round['id']] = $round['name'];
         }
 
-        return $this->roundNames[$roundId];
+        return $roundNames;
     }
 
     /**
@@ -276,6 +284,9 @@ class ToornamentService
         return $gameList;
     }
 
+    /**
+     * @return MatchesList
+     */
     public function getMatches()
     {
         $cacheKey = 'toornament.matches';
@@ -289,6 +300,7 @@ class ToornamentService
                     ]
             );
 
+            $roundIds = [];
             $matchesList = new MatchesList();
             foreach ($matches as $key => $aMatch) {
                 $opponentsList = new OpponetsList();
@@ -316,12 +328,15 @@ class ToornamentService
                     return $a->getNumber() <=> $b->getNumber();
                 });
 
+                if (!in_array($aMatch['round_id'], $roundIds)) {
+                    $roundIds[] = $aMatch['round_id'];
+                }
                 $match = new Match(
                     $aMatch['id'],
                     $aMatch['stage_id'],
                     $aMatch['group_id'],
                     $aMatch['round_id'],
-                    $this->getRoundName($aMatch['round_id']),
+                    "",
                     $aMatch['number'],
                     $aMatch['type'],
                     $aMatch['status'],
@@ -331,13 +346,19 @@ class ToornamentService
                     $aMatch['public_note'],
                     $aMatch['private_note'],
                     $opponentsList
-//                    $this->getGameList($aMatch['id'], $aMatch['number'])
                 );
                 $matchesList->add($match);
 
                 $this->cache->deleteItem('toornament.match.' . $match->getId() .'.gameslist');
             }
 
+            $roundNames = $this->getRoundNames($roundIds);
+            foreach ($matchesList as $match) {
+                /** @var $match Match */
+                if (key_exists($match->getRoundId(), $roundNames)) {
+                    $match->setRoundName($roundNames[$match->getRoundId()]);
+                }
+            }
             $this->cache->set(
                 $cacheKey,
                 $matchesList,
@@ -364,5 +385,33 @@ class ToornamentService
         })->get();
 
         return $match;
+    }
+
+    /**
+     * @param int $number
+     * @return MatchesList
+     */
+    public function getNextMatch(int $number)
+    {
+        /** @var MatchesList $nextMatch */
+        $nextMatch =  $this->getMatches()
+            ->filter(function ($match) {
+                /** @var $match Match */
+                return $match->getStatus() !== Match::STATUS_COMPLETED;
+            });
+
+       $nextMatch
+            ->sortWith(function ($a, $b) {
+                /** @var $a Match */
+                /** @var $b Match */
+                if (is_null($a->getScheduledDatetime())) {
+                    return -1;
+                } else if (is_null($b->getScheduledDatetime())) {
+                    return 1;
+                }
+                return $a->getScheduledDatetime()->getTimestamp() <=> $b->getScheduledDatetime()->getTimestamp();
+            });
+
+        return $nextMatch->take($number);
     }
 }

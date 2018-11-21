@@ -39,6 +39,10 @@ services:
         class: Symfony\Component\Cache\Simple\FilesystemCache
         public: false
 
+    Symfony\Component\Form\FormFactory:
+        class: Symfony\Component\Form\FormFactory
+        public: false
+
     App\Service\ToornamentService:
         class: App\Service\ToornamentService
         arguments:
