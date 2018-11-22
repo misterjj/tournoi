@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e90a083b-d779-4951-8b22-ed8222d56b20" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,25 +20,25 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="777">
-                <caret line="76" column="126" lean-forward="false" selection-start-line="76" selection-start-column="126" selection-end-line="76" selection-end-column="126" />
+                <caret line="75" column="121" lean-forward="true" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
                 <folding>
-                  <marker date="1542920035868" expanded="true" signature="1124:1151" ph="{...}" />
-                  <marker date="1542920035868" expanded="true" signature="1130:1149" ph="/*...*/" />
-                  <marker date="1542920035868" expanded="true" signature="1433:1498" ph="GuzzleHttp\Client: &lt;2 keys&gt;" />
-                  <marker date="1542920035868" expanded="true" signature="1433:1992" ph="GuzzleHttp\Client: &lt;5 keys&gt;" />
-                  <marker date="1542920035868" expanded="true" signature="1463:1480" ph="GuzzleHttp\Client" />
-                  <marker date="1542920035868" expanded="true" signature="1493:1498" ph="false" />
-                  <marker date="1542920035868" expanded="true" signature="1500:1623" ph="Symfony\C…ystemCache: &lt;2 keys&gt;" />
-                  <marker date="1542920035868" expanded="true" signature="1559:1605" ph="Symfony\C…ystemCache" />
-                  <marker date="1542920035868" expanded="true" signature="1618:1623" ph="false" />
-                  <marker date="1542920035868" expanded="true" signature="1625:1992" ph="App\Servi…entService: &lt;2 keys&gt;" />
-                  <marker date="1542920035868" expanded="true" signature="1667:1696" ph="App\Servi…entService" />
-                  <marker date="1542920035868" expanded="true" signature="1701:1992" ph="arguments: &lt;5 keys&gt;" />
-                  <marker date="1542920035868" expanded="true" signature="1729:1755" ph="%env(TOOR…T_APIKEY)%" />
-                  <marker date="1542920035868" expanded="true" signature="1776:1805" ph="%env(TOOR…LIENT_ID)%" />
-                  <marker date="1542920035868" expanded="true" signature="1830:1863" ph="%env(TOOR…T_SECRET)%" />
-                  <marker date="1542920035868" expanded="true" signature="1888:1922" ph="%env(TOOR…AMENT_ID)%" />
-                  <marker date="1542920035868" expanded="true" signature="1952:1992" ph="%env(TOOR…STAGE_ID)%" />
+                  <marker date="1542920452277" expanded="true" signature="1129:1158" ph="{...}" />
+                  <marker date="1542920452277" expanded="true" signature="1135:1156" ph="/*...*/" />
+                  <marker date="1542920452277" expanded="true" signature="1456:1521" ph="GuzzleHttp\Client: &lt;2 keys&gt;" />
+                  <marker date="1542920452277" expanded="true" signature="1456:2015" ph="GuzzleHttp\Client: &lt;5 keys&gt;" />
+                  <marker date="1542920452277" expanded="true" signature="1486:1503" ph="GuzzleHttp\Client" />
+                  <marker date="1542920452277" expanded="true" signature="1516:1521" ph="false" />
+                  <marker date="1542920452277" expanded="true" signature="1523:1646" ph="Symfony\C…ystemCache: &lt;2 keys&gt;" />
+                  <marker date="1542920452277" expanded="true" signature="1582:1628" ph="Symfony\C…ystemCache" />
+                  <marker date="1542920452277" expanded="true" signature="1641:1646" ph="false" />
+                  <marker date="1542920452277" expanded="true" signature="1648:2015" ph="App\Servi…entService: &lt;2 keys&gt;" />
+                  <marker date="1542920452277" expanded="true" signature="1690:1719" ph="App\Servi…entService" />
+                  <marker date="1542920452277" expanded="true" signature="1724:2015" ph="arguments: &lt;5 keys&gt;" />
+                  <marker date="1542920452277" expanded="true" signature="1752:1778" ph="%env(TOOR…T_APIKEY)%" />
+                  <marker date="1542920452277" expanded="true" signature="1799:1828" ph="%env(TOOR…LIENT_ID)%" />
+                  <marker date="1542920452277" expanded="true" signature="1853:1886" ph="%env(TOOR…T_SECRET)%" />
+                  <marker date="1542920452277" expanded="true" signature="1911:1945" ph="%env(TOOR…AMENT_ID)%" />
+                  <marker date="1542920452277" expanded="true" signature="1975:2015" ph="%env(TOOR…STAGE_ID)%" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -174,6 +174,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,7 +253,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,12 +422,13 @@
       <workItem from="1542836694814" duration="1953000" />
       <workItem from="1542838659019" duration="1799000" />
       <workItem from="1542916160821" duration="1762000" />
-      <workItem from="1542918152710" duration="1896000" />
+      <workItem from="1542918152710" duration="1919000" />
+      <workItem from="1542920188086" duration="272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89652000" />
+    <option name="totallyTimeSpent" value="89947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -651,9 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#28#55#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8755">
           <caret line="536" column="8" lean-forward="false" selection-start-line="536" selection-start-column="8" selection-end-line="536" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="108" column="26" lean-forward="false" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="64" selection-end-line="19" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding>
-            <element signature="e#34#65#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,9 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#34#61#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="75" lean-forward="false" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,7 +759,7 @@
         <state relative-caret-position="663">
           <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
           <folding>
-            <element signature="e#30#62#0#PHP" expanded="true" />
+            <element signature="e#30#62#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,25 +795,25 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="777">
-            <caret line="76" column="126" lean-forward="false" selection-start-line="76" selection-start-column="126" selection-end-line="76" selection-end-column="126" />
+            <caret line="75" column="121" lean-forward="true" selection-start-line="75" selection-start-column="121" selection-end-line="75" selection-end-column="121" />
             <folding>
-              <marker date="1542920035868" expanded="true" signature="1124:1151" ph="{...}" />
-              <marker date="1542920035868" expanded="true" signature="1130:1149" ph="/*...*/" />
-              <marker date="1542920035868" expanded="true" signature="1433:1498" ph="GuzzleHttp\Client: &lt;2 keys&gt;" />
-              <marker date="1542920035868" expanded="true" signature="1433:1992" ph="GuzzleHttp\Client: &lt;5 keys&gt;" />
-              <marker date="1542920035868" expanded="true" signature="1463:1480" ph="GuzzleHttp\Client" />
-              <marker date="1542920035868" expanded="true" signature="1493:1498" ph="false" />
-              <marker date="1542920035868" expanded="true" signature="1500:1623" ph="Symfony\C…ystemCache: &lt;2 keys&gt;" />
-              <marker date="1542920035868" expanded="true" signature="1559:1605" ph="Symfony\C…ystemCache" />
-              <marker date="1542920035868" expanded="true" signature="1618:1623" ph="false" />
-              <marker date="1542920035868" expanded="true" signature="1625:1992" ph="App\Servi…entService: &lt;2 keys&gt;" />
-              <marker date="1542920035868" expanded="true" signature="1667:1696" ph="App\Servi…entService" />
-              <marker date="1542920035868" expanded="true" signature="1701:1992" ph="arguments: &lt;5 keys&gt;" />
-              <marker date="1542920035868" expanded="true" signature="1729:1755" ph="%env(TOOR…T_APIKEY)%" />
-              <marker date="1542920035868" expanded="true" signature="1776:1805" ph="%env(TOOR…LIENT_ID)%" />
-              <marker date="1542920035868" expanded="true" signature="1830:1863" ph="%env(TOOR…T_SECRET)%" />
-              <marker date="1542920035868" expanded="true" signature="1888:1922" ph="%env(TOOR…AMENT_ID)%" />
-              <marker date="1542920035868" expanded="true" signature="1952:1992" ph="%env(TOOR…STAGE_ID)%" />
+              <marker date="1542920452277" expanded="true" signature="1129:1158" ph="{...}" />
+              <marker date="1542920452277" expanded="true" signature="1135:1156" ph="/*...*/" />
+              <marker date="1542920452277" expanded="true" signature="1456:1521" ph="GuzzleHttp\Client: &lt;2 keys&gt;" />
+              <marker date="1542920452277" expanded="true" signature="1456:2015" ph="GuzzleHttp\Client: &lt;5 keys&gt;" />
+              <marker date="1542920452277" expanded="true" signature="1486:1503" ph="GuzzleHttp\Client" />
+              <marker date="1542920452277" expanded="true" signature="1516:1521" ph="false" />
+              <marker date="1542920452277" expanded="true" signature="1523:1646" ph="Symfony\C…ystemCache: &lt;2 keys&gt;" />
+              <marker date="1542920452277" expanded="true" signature="1582:1628" ph="Symfony\C…ystemCache" />
+              <marker date="1542920452277" expanded="true" signature="1641:1646" ph="false" />
+              <marker date="1542920452277" expanded="true" signature="1648:2015" ph="App\Servi…entService: &lt;2 keys&gt;" />
+              <marker date="1542920452277" expanded="true" signature="1690:1719" ph="App\Servi…entService" />
+              <marker date="1542920452277" expanded="true" signature="1724:2015" ph="arguments: &lt;5 keys&gt;" />
+              <marker date="1542920452277" expanded="true" signature="1752:1778" ph="%env(TOOR…T_APIKEY)%" />
+              <marker date="1542920452277" expanded="true" signature="1799:1828" ph="%env(TOOR…LIENT_ID)%" />
+              <marker date="1542920452277" expanded="true" signature="1853:1886" ph="%env(TOOR…T_SECRET)%" />
+              <marker date="1542920452277" expanded="true" signature="1911:1945" ph="%env(TOOR…AMENT_ID)%" />
+              <marker date="1542920452277" expanded="true" signature="1975:2015" ph="%env(TOOR…STAGE_ID)%" />
             </folding>
           </first_editor>
           <second_editor />

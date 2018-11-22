@@ -12,7 +12,7 @@ Ce site est un site evènementiel afin d'accueillir un tournoi de super smash br
 
 ### L'autowiring et l'injection de dépendances
 
-Grâce à Symfony 4 et l'[autowiring](https://symfony.com/doc/current/service_container/autowiring.html) l'injection de dépendance est beaucoup plus simple.
+Grâce à Symfony 4 et l'[autowiring](https://symfony.com/doc/current/service_container/autowiring.html) l'injection de dépendance est beaucoup plus simple.<br/>
 Comme exemple on peut voir dans [/src/Service/ToornamentService.php](https://github.com/misterjj/tournoi/blob/master/src/Service/ToornamentService.php):
 
 ```php
@@ -26,13 +26,13 @@ function __construct(
     String $tournamentStageId
 )
 {
-    /* fonction body */
+    /* function's body */
 }
 ```
 
-Ici mon service qui communique avec Toornament à besoin de Guzzle, de cache fichier et de paramètre de connections à l'api.
+Le ``ToornamentService`` communique avec l'api de Toornament. Il besoin de Guzzle, de cache fichier et de paramètres de connections à l'api.
 
-Dans [/config/services.yaml](https://github.com/misterjj/tournoi/blob/master/config/services.yaml) nous avons la configurations des services :
+Dans [/config/services.yaml](https://github.com/misterjj/tournoi/blob/master/config/services.yaml) nous avons la configuration des services :
 ```yaml
 GuzzleHttp\Client:
     class: GuzzleHttp\Client
@@ -51,12 +51,11 @@ App\Service\ToornamentService:
         $tournamentId:  '%env(TOORNAMENT_TOURRNAMENT_ID)%'
         $tournamentStageId:  '%env(TOORNAMENT_TOURRNAMENT_STAGE_ID)%'
 ```
-La déclaration des deux service pour Guzzle et le cache, puis la déclaration du service ``ToornamentService`` avec les paramètres.
+La déclaration des deux services pour Guzzle et le cache, puis la déclaration du service ``ToornamentService`` avec les paramètres.
 
 ###Guzzle Asynchrone
 
-Afin de d'optimiser le temps d'appel vers l'api de toornament j'ai utilisé le système de [requête asynchrone de guzzle](http://mcamuzat.github.io/blog/2015/09/21/guzzle-asynchrone-avec-les-promises/) avec les promises.
-
+Afin d'optimiser le temps d'appel vers l'api de toornament j'ai utilisé le système de [requête asynchrone de guzzle](http://mcamuzat.github.io/blog/2015/09/21/guzzle-asynchrone-avec-les-promises/) avec les promises. <br/>
 Example  [/src/Service/ToornamentService.php](https://github.com/misterjj/tournoi/blob/master/src/Service/ToornamentService.php) dans la fonction ``getGameList(String $matchId)`` :
 
 ```php
@@ -73,5 +72,5 @@ $results = \GuzzleHttp\Promise\unwrap($promises);
 ```
 
 ##Points d'améliorations
-* Enlever le hack dans la méthode ``getGameList(String $matchId)`` du ``ToornamentService`` si Toornament corige le bug.
-* Utiliser [Webpack Encore](https://symfony.com/doc/current/frontend.html) afin d'avoir une gestion des statics plus propores.
+* Enlever le hack dans la méthode ``getGameList(String $matchId)`` du ``ToornamentService`` si Toornament corrige le bug.
+* Utiliser [Webpack Encore](https://symfony.com/doc/current/frontend.html) afin d'avoir une gestion des statics plus propre.
