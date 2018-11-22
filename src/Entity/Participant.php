@@ -38,7 +38,7 @@ class Participant
     private $nickname;
 
     /**
-     * @ORM\Column(type="string", length=255, unique=true)
+     * @ORM\Column(type="string", length=100, unique=true)
      * @Assert\NotBlank
      * @Assert\Email(
      *     message = "l'email '{{ value }}' n'est pas valide.",
