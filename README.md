@@ -53,7 +53,7 @@ App\Service\ToornamentService:
 ```
 La déclaration des deux services pour Guzzle et le cache, puis la déclaration du service ``ToornamentService`` avec les paramètres.
 
-###Guzzle Asynchrone
+### Guzzle Asynchrone
 
 Afin d'optimiser le temps d'appel vers l'api de toornament j'ai utilisé le système de [requête asynchrone de guzzle](http://mcamuzat.github.io/blog/2015/09/21/guzzle-asynchrone-avec-les-promises/) avec les promises. <br/>
 Example  [/src/Service/ToornamentService.php](https://github.com/misterjj/tournoi/blob/master/src/Service/ToornamentService.php) dans la fonction ``getGameList(String $matchId)`` :
@@ -71,6 +71,6 @@ for ($i = 1; $i <= $numberOfGame; $i++) {
 $results = \GuzzleHttp\Promise\unwrap($promises);
 ```
 
-##Points d'améliorations
+## Points d'améliorations
 * Enlever le hack dans la méthode ``getGameList(String $matchId)`` du ``ToornamentService`` si Toornament corrige le bug.
 * Utiliser [Webpack Encore](https://symfony.com/doc/current/frontend.html) afin d'avoir une gestion des statics plus propre.
