@@ -2,7 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e90a083b-d779-4951-8b22-ed8222d56b20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/bayonetta.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/bayonetta.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/bowser.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/bowser.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/bowser_jr.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/bowser_jr.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/captain_falcon.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/captain_falcon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/chrom.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/chrom.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/cloud.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/cloud.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/corrin.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/corrin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/daisy.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/daisy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/dark_pit.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/dark_pit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/dark_samus.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/dark_samus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/diddy_kong.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/diddy_kong.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/donkey_kong.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/donkey_kong.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/dr_mario.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/dr_mario.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/duck_hunt.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/duck_hunt.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/falco.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/falco.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/fox.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/fox.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/ganondorf.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/ganondorf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/gaogaen.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/gaogaen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/greninja.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/greninja.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/ice_climbers.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/ice_climbers.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/ike.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/ike.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/inkling.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/inkling.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/jigglypuff.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/jigglypuff.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/ken.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/ken.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/king_dedede.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/king_dedede.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/king_k_rool.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/king_k_rool.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/link.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/link.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/little_mac.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/little_mac.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucario.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucario.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucarion.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucarion.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucas.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucas.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucina.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/lucina.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/luigi.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/luigi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/mario.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/mario.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/marth.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/marth.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/mega_man.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/mega_man.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/meta_knight.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/meta_knight.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/mewtwo.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/mewtwo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/mii.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/mii.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/mii_fighter.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/mii_fighter.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/mr_game_and_watch.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/mr_game_and_watch.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/mr_game_watch.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/mr_game_watch.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/ness.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/ness.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/olimar.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/olimar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/pac_man.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/pac_man.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/packun_flower.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/packun_flower.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/palutena.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/palutena.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/peach.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/peach.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/pichu.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/pichu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/pikachu.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/pikachu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/pit.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/pit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/pokemon_trainer.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/pokemon_trainer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/richter.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/richter.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/ridley.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/ridley.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/rob.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/rob.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/robin.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/robin.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/rosalina_luma.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/rosalina_luma.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/roy.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/roy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/ryu.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/ryu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/samus.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/samus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/sheik.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/sheik.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/shizue.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/shizue.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/shulk.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/shulk.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/simon.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/simon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/snake.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/snake.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/sonic.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/sonic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/toon_link.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/toon_link.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/villager.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/villager.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/wario.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/wario.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/wii_fit_trainer.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/wii_fit_trainer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/wolf.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/wolf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/yoshi.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/yoshi.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/young_link.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/young_link.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/zelda.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/zelda.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/fighter/pict/zero_suit_samus.png" afterPath="$PROJECT_DIR$/public/assets/img/fighter/pict/zero_suit_samus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/stage/stage_img1.jpg" afterPath="$PROJECT_DIR$/public/assets/img/stage/stage_img1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/stage/stage_img3.jpg" afterPath="$PROJECT_DIR$/public/assets/img/stage/stage_img3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/stage/stage_img39.jpg" afterPath="$PROJECT_DIR$/public/assets/img/stage/stage_img39.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/stage/stage_img44.jpg" afterPath="$PROJECT_DIR$/public/assets/img/stage/stage_img44.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/stage/stage_img8.jpg" afterPath="$PROJECT_DIR$/public/assets/img/stage/stage_img8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/stage/stage_img85_en.jpg" afterPath="$PROJECT_DIR$/public/assets/img/stage/stage_img85_en.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register/index.html.twig" afterPath="$PROJECT_DIR$/templates/register/index.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,33 +96,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="743">
-                <caret line="73" column="3" lean-forward="false" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
-                <folding>
-                  <marker date="1542920518545" expanded="true" signature="1129:1158" ph="{...}" />
-                  <marker date="1542920518545" expanded="true" signature="1135:1156" ph="/*...*/" />
-                  <marker date="1542920518545" expanded="true" signature="1456:1521" ph="GuzzleHttp\Client: &lt;2 keys&gt;" />
-                  <marker date="1542920518545" expanded="true" signature="1456:2015" ph="GuzzleHttp\Client: &lt;5 keys&gt;" />
-                  <marker date="1542920518545" expanded="true" signature="1486:1503" ph="GuzzleHttp\Client" />
-                  <marker date="1542920518545" expanded="true" signature="1516:1521" ph="false" />
-                  <marker date="1542920518545" expanded="true" signature="1523:1646" ph="Symfony\C…ystemCache: &lt;2 keys&gt;" />
-                  <marker date="1542920518545" expanded="true" signature="1582:1628" ph="Symfony\C…ystemCache" />
-                  <marker date="1542920518545" expanded="true" signature="1641:1646" ph="false" />
-                  <marker date="1542920518545" expanded="true" signature="1648:2015" ph="App\Servi…entService: &lt;2 keys&gt;" />
-                  <marker date="1542920518545" expanded="true" signature="1690:1719" ph="App\Servi…entService" />
-                  <marker date="1542920518545" expanded="true" signature="1724:2015" ph="arguments: &lt;5 keys&gt;" />
-                  <marker date="1542920518545" expanded="true" signature="1752:1778" ph="%env(TOOR…T_APIKEY)%" />
-                  <marker date="1542920518545" expanded="true" signature="1799:1828" ph="%env(TOOR…LIENT_ID)%" />
-                  <marker date="1542920518545" expanded="true" signature="1853:1886" ph="%env(TOOR…T_SECRET)%" />
-                  <marker date="1542920518545" expanded="true" signature="1911:1945" ph="%env(TOOR…AMENT_ID)%" />
-                  <marker date="1542920518545" expanded="true" signature="1975:2015" ph="%env(TOOR…STAGE_ID)%" />
-                </folding>
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/register/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="76" lean-forward="false" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,9 +199,9 @@
         <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/RegisterController.php" />
-        <option value="$PROJECT_DIR$/templates/register/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Participant.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/templates/register/index.html.twig" />
       </list>
     </option>
   </component>
@@ -172,8 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,7 +255,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tournoi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="register" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,47 +288,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tournoi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tournoi" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tournoi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tournoi" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,12 +465,13 @@
       <workItem from="1542838659019" duration="1799000" />
       <workItem from="1542916160821" duration="1762000" />
       <workItem from="1542918152710" duration="1919000" />
-      <workItem from="1542920188086" duration="332000" />
+      <workItem from="1542920188086" duration="442000" />
+      <workItem from="1543431725050" duration="266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90007000" />
+    <option name="totallyTimeSpent" value="90383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -437,12 +481,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -732,13 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="75" lean-forward="false" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -793,7 +830,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="743">
+          <first_editor relative-caret-position="770">
             <caret line="73" column="3" lean-forward="false" selection-start-line="73" selection-start-column="3" selection-end-line="73" selection-end-column="3" />
             <folding>
               <marker date="1542920518545" expanded="true" signature="1129:1158" ph="{...}" />
@@ -816,6 +853,14 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="76" lean-forward="false" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
