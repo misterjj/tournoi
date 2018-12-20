@@ -9,7 +9,7 @@ use Twig\Environment;
 class CashprizeController
 {
     /**
-     * @Route("/", name="cashprize")
+     * @Route("/cashprize", name="cashprize")
      * @param Environment $twig
      * @return Response
      */
