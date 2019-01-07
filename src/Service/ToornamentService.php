@@ -15,6 +15,7 @@ use App\Model\Toornament\OpponetsList;
 use App\Model\Toornament\Participant;
 use GuzzleHttp\Exception\RequestException;
 use Symfony\Component\Cache\Simple\FilesystemCache;
+use Symfony\Component\Config\Definition\Exception\Exception;
 
 class ToornamentService
 {
@@ -236,12 +237,24 @@ class ToornamentService
                     true
                 );
             }
-            $results = \GuzzleHttp\Promise\unwrap($promises);
-            ksort($results);
+
+            try {
+                $results = \GuzzleHttp\Promise\settle($promises)->wait();
+                ksort($results);
+            } catch (Exception $e) {
+                dump('ici');
+                dump($e);
+                exit;
+            }
+
 
             $gameList = new GameList();
             foreach ($results as $result) {
+                if (!isset($result['value'])) {
+                    continue;
+                }
                 /** @var $result \GuzzleHttp\Psr7\Response */
+                $result = $result['value'];
                 $game = json_decode($result->getBody(), true);
 
                 $gameOpponentsList = new GameOpponentsList();
