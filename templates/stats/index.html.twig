@@ -1,0 +1,492 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Règlement !{% endblock %}
+
+{% block body %}
+    <div class="container-fluid with-content-gutters stats">
+        <br><br><br>
+        <div class="page-heading bordered">
+            <div class="h3 mr-md-3 mb-0">Statistiques</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card text-white bg-success mb-3 card-stat">
+                    <div class="card-body">
+                        <div class="d-flex flex-row">
+                            <div class="align-self-center"><i class="fas fa-gamepad fa-7x"></i></div>
+                            <div class="flex-grow-1  text-right"><div class="h1">57<small>games joues<br/><br></small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card text-white bg-info mb-3 card-stat">
+                    <div class="card-body">
+                        <div class="d-flex flex-row">
+                            <div class="align-self-center"><i class="fas fa-users fa-7x"></i></div>
+                            <div class="flex-grow-1  text-right"><div class="h1">24<small>Personnages differents</small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card text-white bg-danger mb-3 card-stat">
+                    <div class="card-body">
+                        <div class="d-flex flex-row">
+                            <div class="align-self-center"><i class="fas fa-fist-raised fa-7x"></i></div>
+                            <div class="flex-grow-1  text-right"><div class="h1">241<small>Kills<br/><br></small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card text-white bg-secondary mb-3 card-stat">
+                    <div class="card-body">
+                        <div class="d-flex flex-row">
+                            <div class="align-self-center"><i class="fas fa-ghost fa-7x"></i></div>
+                            <div class="flex-grow-1 text-right"><div class="h1">231<small>Morts<br/><br></small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="picks">
+                    <div class="h3 mb-4">Les picks</div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/link.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%; background-color:#4BAAC3">LINK <span>23</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/ike.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 35%; background-color:#AB3B30">IKE <span>9</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/mega_man.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 31%; background-color:#0174EC">MEGA MAN <span>8</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/marth.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 27%; background-color:#0174EC">MARTH <span>7</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/luigi.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 27%; background-color:#409936">LUIGI <span>7</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/palutena.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 27%; background-color:#D1CC13">PALUTENA <span>7</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/greninja.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 27%; background-color:#0047A4">GRENINJA <span>7</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/young_link.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 20%; background-color:#00B042">Y. LINK <span>5</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/roy.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 16%; background-color:#E10000">ROY<span>4</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/mr_game_and_watch.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 16%; background-color:#000000">MR. GAME & WATCH 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/corrin.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar  text-secondary" role="progressbar" style="width: 11%; background-color:#E3DBD9">CORRIN 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/peach.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar  text-secondary" role="progressbar" style="width: 11%; background-color:#FDF0E8">PEACH 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/mario.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 11%; background-color:#E60E10">MARIO 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/pichu.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar  text-secondary" role="progressbar" style="width: 8%; background-color:#FFF461">PICHU 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/kirby.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 8%; background-color:#F2A9B2">KIRBY 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/ness.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#FF211B">NESS 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/wii_fit_trainer.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#7A7A7A">WII FIT TRAINER 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/pokemon_trainer.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#EF0A09">POKEMON TRAINER 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/bowser.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#80A004">BOWSER 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/cloud.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#545366">CLOUD 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/lucina.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#283879">LUCINA 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/donkey_kong.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#89491E">DONKEY KONG 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/ridley.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#636EA8">RIDLEY 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/dark_samus.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 4%; background-color:#003473">DARK SAMUS 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div>
+                    <div class="h3 mb-4">
+                        Les bourreaux <br/>
+                        <small>kills / nb. picks (si au moins 3 picks)</small>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/greninja.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%; background-color:#0047A4">GRENINJA <span>2.86</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/peach.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar  text-secondary" role="progressbar" style="width: 65%; background-color:#FDF0E8">PEACH <span class="text-light">2.67</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/mario.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 65%; background-color:#E60E10">MARIO <span>2.67</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/mega_man.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 64.31%; background-color:#0174EC">MEGA MAN <span>2.63</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/young_link.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 63.70%; background-color:#00B042">Y. LINK <span>2.60</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/ike.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 62.31%; background-color:#AB3B30">IKE <span>2.56</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/marth.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 59.50%; background-color:#0174EC">MARTH <span>2.43</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/palutena.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 59.50%; background-color:#D1CC13">PALUTENA <span>2.43</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/link.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 57.52%; background-color:#4BAAC3">LINK <span>2.35</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div class="h3 mb-4">Les victimes <br> <small>morts / nb. picks (si au moins 3 picks)</small></div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/corrin.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar  text-secondary" role="progressbar" style="width: 70%; background-color:#E3DBD9">CORRIN <span class="text-light">3.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/roy.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%; background-color:#E10000">ROY<span>3.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/mr_game_and_watch.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 64.17%; background-color:#000000">MR. GAME & WATCH <span>2.75</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/marth.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%; background-color:#0174EC">MARTH <span>2.57</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/ike.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 57%; background-color:#AB3B30">IKE <span>2.44</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/luigi.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 56.67%; background-color:#409936">LUIGI <span>2.43</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/link.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 53.77%; background-color:#4BAAC3">LINK <span>2.30</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/peach.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar  text-secondary" role="progressbar" style="width: 46.67%; background-color:#FDF0E8">PEACH <span class="text-light">2.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-xs pr-2">
+                            <img class="" src="/assets/img/fighter/pict/young_link.png" height="40px">
+                        </div>
+                        <div class="col-xs flex-grow-1">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 46.67%; background-color:#00B042">Y. LINK <span>2.00</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

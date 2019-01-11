@@ -32,7 +32,7 @@ class BracketsController
             return $match->getGroupId() === $groupIdLoser;
         });
         $finalBracket = new MatchesList();
-        $finalBracket->add($matches->get($matches->count() - 3));
+        $finalBracket->add($matches->get(14));
         $finalBracket->add($matches->get($matches->count() - 2));
         $finalBracket->add($matches->get($matches->count() - 1));
 
