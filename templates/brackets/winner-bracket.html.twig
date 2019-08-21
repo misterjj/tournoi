@@ -1,29 +1,32 @@
 <div class="winner-brackets">
     <div class="h1 text-center">Bracket winner</div>
-    <div class="tournament-bracket tournament-bracket--rounded">
-        <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
-            {#{% dump(winnerBracket.first) %}#}
-            <h3 class="tournament-bracket__round-title">{{ winnerBracket.first.get.roundName }}</h3>
-            <ul class="tournament-bracket__list">
-                {% set lastRoundId = null %}
-                {% for match in winnerBracket %}
-                    {% if (lastRoundId != match.roundId)  %}
-                        {% if (lastRoundId != null)  %}
-                                </ul>
-                            </div>
-                            <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
-                                <h3 class="tournament-bracket__round-title">{{ match.roundName }}</h3>
-                                <ul class="tournament-bracket__list">
+    {% if (winnerBracket.count > 0) %}
+        <div class="tournament-bracket tournament-bracket--rounded">
+            <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
+                <h3 class="tournament-bracket__round-title">{{ winnerBracket.first.get.roundName }}</h3>
+                <ul class="tournament-bracket__list">
+                    {% set lastRoundId = null %}
+                    {% for match in winnerBracket %}
+                        {% if (lastRoundId != match.roundId)  %}
+                            {% if (lastRoundId != null)  %}
+                                    </ul>
+                                </div>
+                                <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
+                                    <h3 class="tournament-bracket__round-title">{{ match.roundName }}</h3>
+                                    <ul class="tournament-bracket__list">
+                            {% endif  %}
+                            {% set lastRoundId = match.roundId %}
                         {% endif  %}
-                        {% set lastRoundId = match.roundId %}
-                    {% endif  %}
 
-                    {% set isloser = false %}
-                    {% set toloser = false %}
-                    {% include 'brackets/match.html.twig' %}
+                        {% set isloser = false %}
+                        {% set toloser = false %}
+                        {% include 'brackets/match.html.twig' %}
 
-                {% endfor %}
-            </ul>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    </div>
+    {% else %}
+        <h2 class="text-center mt-3">Matches list coming soon !</h2>
+    {% endif  %}
 </div>

@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Model\Toornament\Match;
+use App\Exception\ToornamentException;
 use App\Model\Toornament\MatchesList;
 use App\Service\ToornamentService;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,15 +18,21 @@ class DefaultController
      */
     public function index(Environment $twig, ToornamentService $toornament)
     {
-        $matches = $toornament->getMatches();
-        $finalBracket = new MatchesList();
-        $finalBracket->add($matches->get($matches->count() - 3));
-        $finalBracket->add($matches->get($matches->count() - 2));
-        $finalBracket->add($matches->get($matches->count() - 1));
+        try {
+            $matches = $toornament->getMatches();
+            $nextMatch = $toornament->getNextMatch(6);
+            $finalBracket = new MatchesList();
+            $finalBracket->add($matches->get($matches->count() - 3));
+            $finalBracket->add($matches->get($matches->count() - 2));
+            $finalBracket->add($matches->get($matches->count() - 1));
+        } catch (ToornamentException $e) {
+            $nextMatch = new MatchesList();
+            $finalBracket = new MatchesList();
+        }
 
         return new Response(
             $twig->render('default/index.html.twig' , [
-                'nextMatches' => $toornament->getNextMatch(6),
+                'nextMatches' => $nextMatch,
                 'finalBracket' => $finalBracket,
             ])
         );

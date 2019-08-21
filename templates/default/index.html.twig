@@ -21,10 +21,12 @@
                     </div>
                 {% endfor %}
             </div>
-        {% else %}
+        {% elseif (finalBracket.count > 0)  %}
             <div class="mt-2 mb-2">
                 {% include 'brackets/finals-bracket.html.twig' %}
             </div>
+        {% else %}
+            <h2 class="text-center mt-3">Matches list coming soon !</h2>
         {% endif %}
         <p class="text-center mt-3">
             <a href="https://www.toornament.com" target="_blank"><img src="/assets/img/PoweredbyToor_White.png" alt="" width="200px"></a> <br/>

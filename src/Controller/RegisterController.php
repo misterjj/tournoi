@@ -25,12 +25,16 @@ class RegisterController
     {
         $participant = new Participant();
         $form = $formFactory->create(ParticipantType::class, $participant);
+        $subscriptionDateEnd = new DateTime(getenv('SUBSCRIPTION_DATE_END'));
+        $subscriptionParticipantLimit = getenv('SUBSCRIPTION_PARTICIPANT_LIMIT');
 
         $subscriptionDateStart = new DateTime(getenv('SUBSCRIPTION_DATE_START'));
         return new Response(
             $twig->render('register/index.html.twig', [
                 'form' => $form->createView(),
-                'subscriptionDateStart' => $subscriptionDateStart
+                'subscriptionDateStart' => $subscriptionDateStart,
+                'subscriptionDateEnd' => $subscriptionDateEnd,
+                'subscriptionParticipantLimit' => $subscriptionParticipantLimit
             ])
         );
     }
@@ -47,9 +51,14 @@ class RegisterController
     public function save(Environment $twig, Request $request, FormFactory $formFactory, EntityManagerInterface $entityManager)
     {
         $subscriptionDateStart = new DateTime(getenv('SUBSCRIPTION_DATE_START'));
+        $subscriptionDateEnd = new DateTime(getenv('SUBSCRIPTION_DATE_END'));
         $participant = new Participant();
         $form = $formFactory->create(ParticipantType::class, $participant);
-        if ($subscriptionDateStart->getTimestamp() <= (new DateTime())->getTimestamp()) {
+        $now = (new DateTime())->getTimestamp();
+        if (
+            $subscriptionDateStart->getTimestamp() <= $now
+            && $subscriptionDateEnd->getTimestamp() >= $now
+        ) {
 
             $form->handleRequest($request);
             if ($form->isSubmitted() && $form->isValid()) {

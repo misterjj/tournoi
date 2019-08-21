@@ -10,7 +10,7 @@ use Twig\Environment;
 class StatsController
 {
     /**
-     * @Route("/stats", name="rules")
+     * @Route("/stats", name="stats")
      * @param Environment $twig
      * @return Response
      */

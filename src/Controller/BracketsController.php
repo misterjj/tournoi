@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Exception\ToornamentException;
 use App\Model\Toornament\Match;
 use App\Model\Toornament\MatchesList;
 use App\Service\ToornamentService;
@@ -17,24 +18,28 @@ class BracketsController
      */
     public function index(Environment $twig, ToornamentService $toornament)
     {
-        $matches = $toornament->getMatches();
-        $groupIdWinner = getenv('TOORNAMENT_TOURRNAMENT_GROUP_ID_WINNNER');
-        $groupIdLoser = getenv('TOORNAMENT_TOURRNAMENT_GROUP_ID_LOSER');
+        try {
+            $matches = $toornament->getMatches();
+            $groupIdWinner = getenv('TOORNAMENT_TOURRNAMENT_GROUP_ID_WINNNER');
+            $groupIdLoser = getenv('TOORNAMENT_TOURRNAMENT_GROUP_ID_LOSER');
 
-        $winnerBracket = $matches->filter(function ($match) use ($groupIdWinner)
-        {
-            /** @var $match Match */
-            return $match->getGroupId() === $groupIdWinner;
-        });
-        $loserBracket = $matches->filter(function ($match) use ($groupIdLoser)
-        {
-            /** @var $match Match */
-            return $match->getGroupId() === $groupIdLoser;
-        });
-        $finalBracket = new MatchesList();
-        $finalBracket->add($matches->get(14));
-        $finalBracket->add($matches->get($matches->count() - 2));
-        $finalBracket->add($matches->get($matches->count() - 1));
+            $winnerBracket = $matches->filter(function ($match) use ($groupIdWinner) {
+                /** @var $match Match */
+                return $match->getGroupId() === $groupIdWinner;
+            });
+            $loserBracket = $matches->filter(function ($match) use ($groupIdLoser) {
+                /** @var $match Match */
+                return $match->getGroupId() === $groupIdLoser;
+            });
+            $finalBracket = new MatchesList();
+            $finalBracket->add($matches->get(14));
+            $finalBracket->add($matches->get($matches->count() - 2));
+            $finalBracket->add($matches->get($matches->count() - 1));
+        } catch (ToornamentException $e) {
+            $winnerBracket = new MatchesList();
+            $loserBracket = new MatchesList();
+            $finalBracket = new MatchesList();
+        }
 
         return new Response($twig->render('brackets/index.html.twig', [
             'winnerBracket' => $winnerBracket,

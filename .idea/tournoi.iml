@@ -18,5 +18,7 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="famillyBook" />
+    <orderEntry type="module" module-name="heroes-list" />
   </component>
 </module>
